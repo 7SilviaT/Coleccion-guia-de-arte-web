@@ -7,7 +7,7 @@ Propuesta de e-commerce para la venta de obras de arte plástico para el públic
 En este proyecto se desarrolló una aplicación web que permite a un usuario validar el número de una tarjeta de crédito utilizando el algoritmo de Luhn\*.
 Además, se implementó la funcionalidad "maskify" para ocultar todos los dígitos de una tarjeta menos los últimos cuatro.
 
-\*El [algoritmo de Luhn](https://es.wikipedia.org/wiki/Algoritmo_de_Luhn), también llamado algoritmo de módulo 10, es un método de suma de verificación, se utiliza para validar números de identificación; tales como el IMEI de los celulares, tarjetas de crédito, etc.
+\El [algoritmo de Luhn](https://es.wikipedia.org/wiki/Algoritmo_de_Luhn) , también llamado algoritmo de módulo 10, es un método de suma de verificación, se utiliza para validar números de identificación; tales como el IMEI de los celulares, tarjetas de crédito, etc.
 
 Este algoritmo es simple. Obtenemos la reversa del número a verificar (que solamente contiene dígitos [0-9]); a todos los números que ocupan una posición par se les debe multiplicar por dos, si este número es mayor o igual a 10, debemos sumar los dígitos del resultado; el número a verificar será válido si la suma de sus dígitos finales es un múltiplo de 10.
 
@@ -17,34 +17,12 @@ Este algoritmo es simple. Obtenemos la reversa del número a verificar (que sola
 
 La lógica del proyecto está implementada completamente en JavaScript. En este proyecto NO se usaron librerías o frameworks, solo JavaScript puro también conocido como Vanilla JavaScript.
 
-El _boilerplate_ contiene una estructura de archivos como punto de partida así como toda la configuración de dependencias y tests de ejemplo:
-
-```text
-./
-├── .babelrc
-├── .editorconfig
-├── .eslintrc
-├── .gitignore
-├── FAQ.md
-├── README.md
-├── package.json
-├── src
-│   ├── index.html
-│   ├── index.js
-│   ├── style.css
-│   └── validator.js
-└── test
-    ├── .eslintrc
-    └── validator.spec.js
-```
 
 ### Primeros pasos
 
 1. Antes que nada, asegúrate de tener un :pencil: editor de texto [VSCode](https://code.visualstudio.com/).
 2. Para ejecutar los comandos a continuación necesitarás una :shell: [UNIX Shell](https://en.wikipedia.org/wiki/Unix_shell),que es un programita que interpreta líneas de comando (command-line interpreter) así como tener [git](https://git-scm.com/) instalado. Si usas un sistema operativo "UNIX-like", como GNU/Linux o MacOS, ya tienes una _shell_ (terminal) instalada por defecto (y probablemente `git` también).
-   Si usas Windows puedes usar la versión completa de [Cmder](https://cmder.net/)
-   que incluye [Git bash](https://git-scm.com/download/win) y si tienes Windows
-   10 o superior puedes usar [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10).
+Si usas Windows puedes usar la versión completa de [Cmder](https://cmder.net/) que incluye [Git bash](https://git-scm.com/download/win) y si tienes Windows10 o superior puedes usar [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10).
 
 3. Clona el repositorio con el comando git clone
 
@@ -66,7 +44,9 @@ En la actualidad artistas peruanos buscan canales de venta atraves de Museos y G
 
 ## 4. Proceso:
 
-1. Diagramación del prototipo ![Figma] https://www.figma.com/design/bDTtl4NlkFuszfQ2J9TFVt/GAL-Art-Store-Website?node-id=0-1&t=3TPCboHv7cKoWSwy-1
-2. Planeación y asignación de tareas en Trello ![trello] https://trello.com/b/dvn15Wmc/card-validation-gal
+1. Diagramación del prototipo Figma https://www.figma.com/design/bDTtl4NlkFuszfQ2J9TFVt/GAL-Art-Store-Website?node-id=0-1&t=3TPCboHv7cKoWSwy-1
+2. Planeación y asignación de tareas en Trello  https://trello.com/b/dvn15Wmc/card-validation-gal
 
 3. Imágenes del producto final:
+
+![image](https://github.com/7SilviaT/Coleccion-guia-de-arte-web/assets/97373107/57ca7c87-1592-4821-8424-d10df5211600)
