@@ -6,9 +6,6 @@
 }
 
 body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   height: 100vh;
   margin: 0;
 }
@@ -17,10 +14,12 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 10px 40px;
 }
 
 .logo img {
   height: 120px;
+  width: 260px;
 }
 
 .nav-links {
@@ -44,21 +43,20 @@ nav {
 }
 
 .home-title {
-  padding-left: 40px;
-  margin-top: 32px;
-  font-size: 45px;
+  padding-left: 60px;
+  margin: 32px 0px;
+  font-size: 35px;
 }
 
 img {
-  width: 200px;
-  height: 150px;
+  width: 250px;
+  height: 200px;
   object-fit: cover;
 }
 
 .carousel {
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   height: 100%;
-  width: 600px;
+  width: 100%;
   overflow: hidden;
 }
 
@@ -70,16 +68,18 @@ img {
 
 .buttons-container {
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
 .btn {
-  background-color: rebeccapurple;
-  color: #fff;
+  background-color: transparent;
+  color: #000;
   border: none;
-  padding: 0.5rem;
+  /* padding: 0.5rem; */
   cursor: pointer;
-  width: 49.5%;
+  width: 10%;
+  font-size: 40px;
 }
 
 .btn:hover {
