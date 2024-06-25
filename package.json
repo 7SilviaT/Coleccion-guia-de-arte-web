@@ -1,0 +1,16 @@
+{
+  "name": "coleccion-guia-de-arte-web",
+  "version": "1.0.0",
+  "main": "src/index.html",
+  "scripts": {
+    "test": "jest --verbose --coverage",
+    "start": "serve ./src",
+    "deploy": "gh-pages -d src"
+  },
+  "dependencies": {
+    "serve": "14.2.3"
+  },
+  "engines": {
+    "node": ">=18.x"
+  }
+}
