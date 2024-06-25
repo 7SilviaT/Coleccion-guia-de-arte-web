@@ -4,38 +4,38 @@ const rightBtn = document.getElementById("right");
 
 const img = document.querySelectorAll("#imgs img");
 
-let idx = 0;
-
-let interval = img.length > 0 ? setInterval(run, 2000) : null;
+let imageIndex = 0;
 
 function run() {
-  idx++;
-  changeImage();
+    imageIndex++;
+    changeImage();
 }
 
 function changeImage() {
-  if (idx > img.length - 1) {
-    idx = 0;
-  } else if (idx < 0) {
-    idx = img.length - 1;
-  }
-
-  imgs.style.transform = `translateX(${-idx * 1800}px)`;
+    if (imageIndex > img.length - 3) {
+        imageIndex = 0;
+    } else if (imageIndex < 0) {
+        imageIndex = img.length - 3;
+    }
+    const translateXValue = -(imageIndex * (100 / 3));
+    imgs.style.transform = `translateX(${translateXValue}%)`;
 }
 
 function resetInterval() {
-  clearInterval(interval);
-  interval = setInterval(run, 2000);
+    clearInterval(interval);
+    interval = setInterval(run, 2000);
 }
 
+let interval = setInterval(run, 2000);
+
 rightBtn.addEventListener("click", () => {
-  idx++;
-  changeImage();
-  resetInterval();
+    imageIndex++;
+    changeImage();
+    resetInterval();
 });
 
 leftBtn.addEventListener("click", () => {
-  idx--;
-  changeImage();
-  resetInterval();
+    imageIndex--;
+    changeImage();
+    resetInterval();
 });

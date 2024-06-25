@@ -1,6 +1,6 @@
-# Coleccion-guia-de-arte-web
+# Coleccion Guia de arte
 
-Propuesta de e-commerce para la venta de obras de arte plástica para el público general con aficción al arte y cultura.
+Propuesta de e-commerce para la venta de obras de arte plástico para el público general con aficción al arte y cultura.
 
 ## 1. Objetivo del proyecto
 
