@@ -4,27 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Image Carousel</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amiko&display=swap"
+      rel="stylesheet"
+    />
+    <title>GAL-coleccion</title>
   </head>
   <body>
-    <div class="carousel">
-      <div class="image-container" id="imgs">
-        <img src="/assets/aguasMiticas.jpg" alt="ccalla-painting" />
-        <img src="assets/amanecer.jpg" alt="lennin-painting" />
-        <img src="assets/canto.jpg" alt="delfina-painting" />
-        <img src="assets/herencias.jpg" alt="sumerinde-painting" />
-        <img src="assets/chauca.jpg" alt="chauca-painting" />
-        <img src="assets/noEntre.jpg" alt="vargas-painting" />
-        <img src="assets/papayas.jpg" alt="syrichaqvi-painting" />
-        <img src="assets/trayectoria.jpg" alt="narvez-paiting" />
+    <div id="root">
+      <header>
+        <nav>
+          <div class="logo">
+            <img src="assets/logoColeccionGAL.png" alt="Logo" class="logo" />
+          </div>
+          <ul class="nav-links">
+            <li><a href="/" onclick="route()">Inicio</a></li>
+            <li><a href="/store" onclick="route()">Tienda</a></li>
+            <li><a href="/about" onclick="route()">Nosotros</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div id="main-page">
+        
       </div>
-
-      <div class="buttons-container">
-        <button id="left" class="btn">Prev</button>
-        <button id="right" class="btn">Next</button>
       </div>
     </div>
-
-    <script src="index.js"></script>
+    <script src="router/router.js" type="module"></script>
   </body>
 </html>

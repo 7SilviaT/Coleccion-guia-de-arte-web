@@ -1,16 +1,52 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
-
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  font-family: "Amiko";
 }
 
 body {
-  font-family: "Roboto", sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
   margin: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 120px;
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links li a {
+  color: #000;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 5px 10px;
+}
+
+.nav-links li a:hover {
+  text-decoration: underline;
+}
+
+.home-title {
+  padding-left: 40px;
+  margin-top: 32px;
+  font-size: 45px;
 }
 
 img {
