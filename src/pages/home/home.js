@@ -41,5 +41,24 @@ leftBtn.addEventListener("click", () => {
 });
 
 function navigateToStore() {
-  window.location.href = "pages/store/store.html";
+
+  const mainContent = document.getElementById('main-page');
+
+  const storePageUrl = 'pages/store/store.html';
+
+  fetch(storePageUrl)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Network response error');
+      }
+      return response.text();
+    })
+    .then(html => {
+      mainContent.innerHTML = html;
+      window.history.pushState({ path: storePageUrl }, '', storePageUrl);
+    })
+    .catch(error => {
+      console.error('Error loading the store page:', error);
+    });
+
 }
