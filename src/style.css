@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Amiko";
+  font-family: "Amiko", sans-serif;
 }
 
 body {
@@ -119,10 +119,11 @@ footer {
 }
 .director-name {
   font-size: 20px;
+  color: #7f918e;
 }
-.contact-position {
+.contact-position i {
   font-size: 14px;
-  font-family: "Times New Roman";
+  font-family: "Gupter", serif;
 }
 
 .contact-row {
@@ -140,9 +141,10 @@ footer {
   align-items: flex-start;
   margin: 2px;
   font-size: 10px;
+  color: #7f918e;
 }
 .icon-text-row a {
-  color: #fff;
+  color: #7f918e;
 }
 
 .icon {
