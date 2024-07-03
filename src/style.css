@@ -191,3 +191,51 @@ footer {
 .subscription-section button:hover {
   background-color: #556563;
 }
+.store-cards-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 253px;
+  height: auto;
+  margin: 40px;
+}
+.card-inner {
+  padding: 20px;
+  text-align: left;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(14, 12, 12, 0.2);
+}
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 9px 10px;
+  font-size: 16px;
+  display: block;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.card-button-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  width: 100%;
+}
